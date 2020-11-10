@@ -15,4 +15,7 @@ public class CashStatsService {
 	public Map<String, Object> getTotalOfMonthByYear () {
 		return cashStatsMapper.selectTotalOfMonthByYear();
 	}
+	 public Map<String,Object> getTotalOutAndInByYear(int year){
+	      return cashStatsMapper.selectTotalOutAndInByYear(year);
+	 }
 }
